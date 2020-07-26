@@ -24,7 +24,7 @@ export class ProductCreateComponent implements OnInit {
     });
   }
 
-  deleteProduct(id: number): void {
+  deleteProduct(id: string): void {
     this.productService.delete(id);
     this.productService.showMessage('Produto excluído com Sucesso!');
     this.router.navigate(['/products']);
